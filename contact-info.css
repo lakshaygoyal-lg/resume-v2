@@ -28,6 +28,11 @@ td{
     padding-right: 5px;
 }
 
+::selection{
+    background-color: #ABBA7C;
+    color: black;
+}
+
 
 .social-media td{
     padding-right: 10px;
@@ -62,9 +67,6 @@ td{
     }
 }
 @media (max-width:285px){
-    .contact-info{
-        margin: 0;
-    }
     input{
         display: block;        
     }
