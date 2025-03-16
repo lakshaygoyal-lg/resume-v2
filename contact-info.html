@@ -1,95 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="icon" href="contact.ico">
-    <link rel="stylesheet" href="contact-info.css">
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Ledger&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="contact-info">
-        <h2 class="headings">Contact Info</h2>
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>&nbsp; - &nbsp;</td>
-                <td>Lakshay Goyal</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>
-                    <div class="social-media">
-                        <table>
-                            <tr>
-                                <td>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/goyal-lakshay/"><img src="linkedin.svg"
-                                            alt="Linkedin" class="social-logo"></a> </td>
-                                <td><a href="https://github.com/Lakshay010-1"><img src="github.svg" alt="Github"
-                                            class="social-logo"></a> </td>
-                                <td><a href="https://leetcode.com/u/luckshay010-1/"><img src="leetcode.svg"
-                                            alt="Leetcode" class="social-logo"></a> </td>
-                            </tr>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td>&nbsp; - &nbsp;</td>
-                <td> India,Earth</td>
-            </tr>
-            <tr>
-                <td>Contact Number</td>
-                <td>&nbsp; - &nbsp;</td>
-                <td> (+91) 8--------2</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>&nbsp; - &nbsp;</td>
-                <td> lakshaybyte@gmail.com</td>
-            </tr>
-        </table>
+<body >
+    <div id="container">
+        <div id="resume-container">
 
-        <hr>
-        <h2 class="headings">Message Box</h2>
-        <table>
-            <form class="" action="mailto:lakshaybyte@gmail.com" method="post" enctype="text/plain">
-                <tr>
-                    <td><label>Your Name</label></td>
-                    <td>&nbsp; :</td>
-                    <td><input type="text" name="Name" value=""></td>
-                </tr>
-
-                <tr>
-                    <td><label>Your Email</label></td>
-                    <td>&nbsp; :</td>
-                    <td><input type="email"></td>
-                </tr>
-
-                <tr>
-                    <td><label>Your Message</label></td>
-                    <td>&nbsp; : </td>
-                    <td><textarea name="MessageBox" row="10" cols="20"></textarea></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td><input type="submit"></td>
-                </tr>
-            </form>
-        </table>
-
-
+            <h2 class="heading">Contact Information</h2>                    
+            <div id="info">
+                <h3>Name</h3>
+                <p>:</p>
+                <p>Lakshay Goyal</p>
+                <h3>Address</h3>
+                <p>:</p>
+                <p>India,Earth</p>
+                <h3>Contact Number</h3>
+                <p>:</p>
+                <p>(+91) 8--------2</p>
+                <h3>Email</h3>
+                <p>:</p>
+                <p>lakshaybyte@gmail.com</p>
+                
+            </div>
+            <hr/>
+            
+            <h2 class="heading">Message Box</h2>
+            <form action="mailto:lakshaybyte@gmail.com" method="post" enctype="text/plain">
+            <div id="contact-info">
+                    <h3>Your Good Name </h3>
+                    <p>:</p>
+                        <input type="text" name="Name" value="" placeholder="Name" required>
+                    <h3>Your Email </h3>
+                    <p>:</p>
+                        <input type="email" placeholder="Email" required>
+                    <h3>Your Message</h3>
+                    <p>:</p>
+                        <textarea name="MessageBox" rows="10" cols="20" placeholder="Message" required></textarea>
+                    <input type="submit" id="submit-button">
+                </div>
+            </div>
+        </form>
     </div>
-
-
+    
 </body>
 
 </html>
